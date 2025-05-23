@@ -5,9 +5,13 @@ export class RomanNumeral {
   };
 
   of(value: string): number {
-  if (!(value in this.values)) {
-    throw new Error('Not implemented');
+    let result = 0;
+    for (const char of value) {
+      if (!(char in this.values)) {
+        throw new Error('Not implemented');
+      }
+      result += this.values[char];
+    }
+    return result;
   }
-  return this.values[value];
-}
 }

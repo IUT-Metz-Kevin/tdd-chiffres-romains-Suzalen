@@ -15,7 +15,10 @@ describe('RomanNumeral', () => {
   });
 
   it('should return 5 for "V"', () => {
-  expect(romanNumeral.of('V')).toBe(5);
-});
+    expect(romanNumeral.of('V')).toBe(5);
+  });
   
+  it('should return 2 for "II"', () => { 
+    expect(romanNumeral.of('II')).toBe(2); });
+
 });
