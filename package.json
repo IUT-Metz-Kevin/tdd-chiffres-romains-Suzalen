@@ -12,10 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.5.3",
-    "vitest": "^1.6.0"
+    "vitest": "^3.1.4"
   },
   "dependencies": {
     "@types/node": "^20.14.10",
+    "pnpm": "^10.11.0",
     "prettier": "^3.3.2"
   }
 }
